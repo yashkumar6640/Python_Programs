@@ -11,8 +11,14 @@ def checkSum(array, sum):
 			break;
 	if(j>=i):
 		print("No such pair");
-				
-array=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+n=input("Enter the limit of array");
+print(n);
+array=list();
+for i in range(int(n)):
+
+	index=input("num:");
+	array.append(int(index));
+array.sort();			
 sum=13;
 checkSum(array, sum);
 
