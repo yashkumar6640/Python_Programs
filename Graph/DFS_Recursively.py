@@ -1,13 +1,13 @@
 class Graph:
 	def __init__(self, graph):
 		self.graph=graph;
-	def dfs(self, graph, start, visited):
-		if start not in visited:
-			print(start);
-			visited.add(start);
-		for next in graph[start]-visited:
+	def dfs(self, graph, vertex, visited):
+		if vertex not in visited:
+			print(vertex);
+			visited.add(vertex);
+		for next in graph[vertex]-visited:
 			self.dfs(graph, next, visited);
-		return visited;
+		return;
 
 graph = {'A': set(['B', 'C']),
              'B': set(['A', 'D', 'E']),
